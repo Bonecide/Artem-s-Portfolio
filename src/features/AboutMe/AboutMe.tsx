@@ -1,5 +1,4 @@
 import {PrimaryButton} from '../../components/PrimaryButton/PrimaryButton'
-import {scrollToSection} from '../../scrollTo/scrollTo'
 import styles from './AboutMe.module.scss'
 
 export const AboutMe = () => {
