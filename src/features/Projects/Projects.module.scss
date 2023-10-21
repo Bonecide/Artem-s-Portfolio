@@ -1,0 +1,100 @@
+.container {
+  margin-top: 200px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  h2 {
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    align-self: center;
+  }
+  .potfolio {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    row-gap: 190px;
+    flex-wrap: wrap;
+    .portfolioCard {
+      position: relative;
+      width: 43%;
+      .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 15px;
+        .textTitle {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+          h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+          }
+          hr {
+            width: 45px;
+            height: 1px;
+            border: none;
+            background: #ff9142;
+          }
+        }
+      }
+      .skills {
+        display: flex;
+        gap: 18px;
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          color: #606060;
+        }
+        div {
+          display: flex;
+          gap: 18px;
+          h5 {
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .blind {
+      width: max-content;
+      width: 120%;
+      position: absolute;
+      top: -150px;
+      left: -90px;
+      z-index: -2;
+    }
+    .mainImg {
+      width: 90%;
+      transition: all 0.5s;
+      animation: 4s infinite mainImgFly linear;
+    }
+    .mainImg:hover {
+      animation-play-state: paused;
+      cursor: pointer;
+      scale: 1.05;
+    }
+  }
+}
+
+@keyframes mainImgFly {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15.5px);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  75% {
+    transform: translateY(-15.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
