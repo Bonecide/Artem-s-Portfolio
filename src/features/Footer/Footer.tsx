@@ -39,7 +39,7 @@ export const Footer = () => {
       <div className={`container ${styles.developer}`}>
         <div className={styles.top}>
           <div className={styles.leftSide}>
-            <h6>Designed by grisenero</h6>
+            <h6>Designed by Artem</h6>
             <h5>2023</h5>
           </div>
           <div className={styles.rightSide}>
