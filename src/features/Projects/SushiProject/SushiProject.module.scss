@@ -1,0 +1,105 @@
+.portfolioCard {
+  position: relative;
+  width: 43%;
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+    .textTitle {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+      hr {
+        width: 45px;
+        height: 1px;
+        border: none;
+        background: #ff9142;
+      }
+    }
+  }
+  .skills {
+    display: flex;
+    gap: 18px;
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      color: #606060;
+    }
+    div {
+      display: flex;
+      gap: 18px;
+      h5 {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+  .blind {
+    width: max-content;
+    width: 140%;
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    z-index: -20;
+    pointer-events: none;
+  }
+  .images {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: 4s infinite mainImgFly linear;
+    .mainImg {
+      position: relative;
+      width: 42%;
+      transition: all 0.5s;
+      transition: opacity 0.5s ease-in-out; // Плавное изменение прозрачности
+      z-index: 1;
+    }
+    .anotherImage {
+      width: 37%;
+      position: absolute;
+      z-index: 0; /* Установите более низкий z-index для других изображений */
+      transform-origin: bottom;
+      bottom: 0px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .anotherImage:first-child {
+      transform: rotate(-5deg);
+      left: 60px;
+    }
+    .anotherImage:last-child {
+      transform: rotate(5deg);
+      right: 60px;
+    }
+    .anotherImage:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+@keyframes mainImgFly {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15.5px);
+  }
+  50% {
+    transform: translateY(-35px);
+  }
+  75% {
+    transform: translateY(-15.5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

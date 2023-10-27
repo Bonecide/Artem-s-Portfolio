@@ -1,6 +1,7 @@
 import {useEffect, useRef} from 'react'
 import {PrimaryButton} from '../../components/PrimaryButton/PrimaryButton'
 import styles from './Header.module.scss'
+import {scrollToSection} from '../../scrollTo/scrollTo'
 
 export const Header = () => {
   const headerRef = useRef<HTMLElement | null>(null)
@@ -30,7 +31,9 @@ export const Header = () => {
         <a href="#works">My works</a>
         <a href="#skills">Skills</a>
       </div>
-      <PrimaryButton>Contact</PrimaryButton>
+      <PrimaryButton onClick={() => scrollToSection('footer')}>
+        Contact
+      </PrimaryButton>
     </header>
   )
 }

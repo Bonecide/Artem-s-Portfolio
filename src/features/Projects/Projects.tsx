@@ -1,5 +1,6 @@
 import {PhoneProject} from './PhoneProject/PhoneProject'
 import styles from './Projects.module.scss'
+import {SushiProject} from './SushiProject/SushiProject'
 export const Projects = () => {
   return (
     <section id="works" className="container">
@@ -34,6 +35,33 @@ export const Projects = () => {
             </div>
           </div>
           <PhoneProject />
+          <SushiProject />
+          <div className={styles.portfolioCard}>
+            <img
+              className={styles.blind}
+              src="/assets/blinds/yellow.png"
+              alt=""
+            />
+            <img
+              className={styles.mainImg}
+              src="/assets/img/CarProject.png"
+              alt=""
+            />
+            <div className={styles.text}>
+              <div className={styles.textTitle}>
+                <h3>Marketplace</h3>
+                <hr />
+              </div>
+              <div className={styles.skills}>
+                <p>Work:</p>
+                <div>
+                  <h5>UX Design</h5>
+                  <h5>UI Design</h5>
+                  <h5>CJM</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
