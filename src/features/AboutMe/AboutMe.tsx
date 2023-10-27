@@ -1,8 +1,8 @@
 import {PrimaryButton} from '../../components/PrimaryButton/PrimaryButton'
+import {scrollToSection} from '../../scrollTo/scrollTo'
 import styles from './AboutMe.module.scss'
 
 export const AboutMe = () => {
-  // onClick={()=> scrollToSection('main')}
   return (
     <section id="about" className="container">
       <div className={styles.container}>
@@ -18,7 +18,9 @@ export const AboutMe = () => {
             have both commercial and product experience. Also worked as a
             freelancer. I work in the web and mobile environment.
           </p>
-          <PrimaryButton>Discover More About Me</PrimaryButton>
+          <PrimaryButton onClick={() => scrollToSection('skills')}>
+            Discover More About Skills
+          </PrimaryButton>
         </div>
         <div className={styles.photo}>
           <img src="/assets/img/photo.png" alt="" />

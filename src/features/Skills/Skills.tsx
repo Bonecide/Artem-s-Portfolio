@@ -1,6 +1,4 @@
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import styles from './Skills.module.scss'
-import {faGamepad} from '@fortawesome/free-solid-svg-icons'
 
 export const Skills = () => {
   return (
