@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 4500)
   }, [])
 
   const loaderTransition = useTransition(isLoading, {
