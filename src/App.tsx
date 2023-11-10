@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   const loaderTransition = useTransition(isLoading, {
-    from: {opacity: 0, background: '#1a1a1a'},
+    from: {opacity: 1, background: '#1a1a1a'},
     enter: {opacity: 1},
     leave: {opacity: 0},
     config: {duration: 300},
