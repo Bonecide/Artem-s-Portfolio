@@ -36,11 +36,7 @@
 
 /* rainbow */
 .rainbow .circle::before {
-  background-color: hsl(
-    calc(1turn / (var(--count) / var(--turns)) * var(--i)),
-    100%,
-    70%
-  );
+  background-color: #ff9142;
 }
 
 /* animations */

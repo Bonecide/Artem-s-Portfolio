@@ -22,7 +22,7 @@ function App() {
     from: {opacity: 0, background: '#1a1a1a'},
     enter: {opacity: 1},
     leave: {opacity: 0},
-    config: {duration: 300}, // Adjust the duration for a smoother transition
+    config: {duration: 300},
   })
 
   return (
