@@ -49,7 +49,7 @@ export const Projects = () => {
             />
             <div className={styles.text}>
               <div className={styles.textTitle}>
-                <h3>Marketplace</h3>
+                <h3>Informational landing</h3>
                 <hr />
               </div>
               <div className={styles.skills}>
@@ -57,7 +57,7 @@ export const Projects = () => {
                 <div>
                   <h5>UX Design</h5>
                   <h5>UI Design</h5>
-                  <h5>CJM</h5>
+                  <h5>Copywriting </h5>
                 </div>
               </div>
             </div>
