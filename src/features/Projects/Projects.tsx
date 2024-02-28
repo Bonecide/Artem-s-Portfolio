@@ -8,7 +8,12 @@ export const Projects = () => {
         <h2>My Projects Highlight</h2>
 
         <div className={styles.potfolio}>
-          <div className={styles.portfolioCard}>
+          <a
+            href="https://www.figma.com/file/WOQFzCd44r50mb6frfyX8H/KudaGo-Design?type=design&node-id=0%3A1&mode=design&t=10W8SX5D892asjSL-1"
+            target="_blank"
+            className={styles.portfolioCard}
+            rel="noreferrer"
+          >
             <img
               className={styles.blind}
               src="/assets/blinds/purple.png"
@@ -33,10 +38,15 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
           <PhoneProject />
           <SushiProject />
-          <div className={styles.portfolioCard}>
+          <a
+            href="https://www.kassir.info/"
+            target="_blank"
+            className={styles.portfolioCard}
+            rel="noreferrer"
+          >
             <img
               className={styles.blind}
               src="/assets/blinds/yellow.png"
@@ -61,7 +71,7 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>

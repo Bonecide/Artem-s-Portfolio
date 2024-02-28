@@ -1,5 +1,6 @@
 import {useEffect, useMemo, useRef, useState} from 'react'
 import styles from './PhoneProject.module.scss'
+import {isIOS, isMacOs} from 'react-device-detect'
 
 export const PhoneProject = () => {
   const allImages = useMemo(
@@ -53,7 +54,16 @@ export const PhoneProject = () => {
   }
 
   return (
-    <div className={styles.portfolioCard}>
+    <a
+      target="_blank"
+      href={
+        isIOS || isMacOs
+          ? 'https://apps.apple.com/ru/app/showgo/id6454899255'
+          : 'https://play.google.com/store/apps/details?id=com.kassirKg.showGoUz&hl=ru&gl=US'
+      }
+      className={styles.portfolioCard}
+      rel="noreferrer"
+    >
       <img className={styles.blind} src="/assets/blinds/orange.png" alt="" />
       <div className={styles.images}>
         <img
@@ -91,6 +101,6 @@ export const PhoneProject = () => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   )
 }
