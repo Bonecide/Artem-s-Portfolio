@@ -62,9 +62,12 @@
       transition: all 0.5s;
       transition: opacity 0.5s ease-in-out; // Плавное изменение прозрачности
       z-index: 1;
+      img {
+        width: 100%;
+      }
     }
     .anotherImage {
-        width: 37%;
+      width: 37%;
       position: absolute;
       z-index: 0; /* Установите более низкий z-index для других изображений */
       transform-origin: bottom;
@@ -81,7 +84,7 @@
       right: 60px;
     }
     .anotherImage:hover {
-        scale: 1.1;
+      scale: 1.1;
     }
   }
 }

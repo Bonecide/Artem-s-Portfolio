@@ -54,16 +54,7 @@ export const PhoneProject = () => {
   }
 
   return (
-    <a
-      target="_blank"
-      href={
-        isIOS || isMacOs
-          ? 'https://apps.apple.com/ru/app/showgo/id6454899255'
-          : 'https://play.google.com/store/apps/details?id=com.kassirKg.showGoUz&hl=ru&gl=US'
-      }
-      className={styles.portfolioCard}
-      rel="noreferrer"
-    >
+    <div className={styles.portfolioCard} rel="noreferrer">
       <img className={styles.blind} src="/assets/blinds/orange.png" alt="" />
       <div className={styles.images}>
         <img
@@ -73,12 +64,18 @@ export const PhoneProject = () => {
           src={anotherImages[0]}
           alt=""
         />
-        <img
-          ref={mainImageRef}
+        <a
           className={styles.mainImg}
-          src={mainImg}
-          alt=""
-        />
+          target="_blank"
+          href={
+            isIOS || isMacOs
+              ? 'https://apps.apple.com/ru/app/showgo/id6454899255'
+              : 'https://play.google.com/store/apps/details?id=com.kassirKg.showGoUz&hl=ru&gl=US'
+          }
+          rel="noreferrer"
+        >
+          <img ref={mainImageRef} src={mainImg} alt="" />
+        </a>
         <img
           ref={secondImage}
           className={styles.anotherImage}
@@ -101,6 +98,6 @@ export const PhoneProject = () => {
           </div>
         </div>
       </div>
-    </a>
+    </div>
   )
 }
