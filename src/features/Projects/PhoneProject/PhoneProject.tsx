@@ -69,8 +69,8 @@ export const PhoneProject = () => {
           target="_blank"
           href={
             isIOS || isMacOs
-              ? 'https://apps.apple.com/ru/app/showgo/id6454899255'
-              : 'https://play.google.com/store/apps/details?id=com.kassirKg.showGoUz&hl=ru&gl=US'
+              ? 'https://apps.apple.com/ru/app/kassir-kg/id6478946817?l=en-GB'
+              : 'https://play.google.com/store/apps/details?id=com.kassirKg.clientapp'
           }
           rel="noreferrer"
         >
