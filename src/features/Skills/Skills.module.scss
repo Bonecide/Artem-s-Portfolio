@@ -25,6 +25,7 @@
     left: -230px;
     top: -250px;
     z-index: -1;
+    pointer-events: none;
   }
   .skills {
     display: flex;
