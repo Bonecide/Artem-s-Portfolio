@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .container {
   display: flex;
   justify-content: center;
@@ -12,6 +14,9 @@
     font-size: 72px;
     font-weight: 700;
     text-align: center;
+    @include mobile {
+      font-size: 32px;
+    }
   }
   .blind {
     touch-action: none;

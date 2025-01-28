@@ -18,12 +18,19 @@ export const AboutMe = () => {
             have both commercial and product experience. Also worked as a
             freelancer. I work in the web and mobile environment.
           </p>
-          <PrimaryButton onClick={() => scrollToSection('skills')}>
-            Discover More About Skills
-          </PrimaryButton>
+          <div className={styles.desktopButton}>
+            <PrimaryButton onClick={() => scrollToSection('skills')}>
+              Discover More About Skills
+            </PrimaryButton>
+          </div>
         </div>
         <div className={styles.photo}>
           <img src="/assets/img/photo.png" alt="" />
+        </div>
+        <div className={styles.mobileButton}>
+          <PrimaryButton onClick={() => scrollToSection('skills')}>
+            Discover More About Skills
+          </PrimaryButton>
         </div>
       </div>
     </section>

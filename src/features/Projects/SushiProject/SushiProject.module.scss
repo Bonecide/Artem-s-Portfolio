@@ -1,6 +1,12 @@
+@import '../../../global.scss';
+
 .portfolioCard {
   position: relative;
   width: 43%;
+
+  @include mobile {
+    width: 100%;
+  }
   .text {
     display: flex;
     flex-direction: column;
@@ -14,6 +20,9 @@
         font-size: 20px;
         font-weight: 700;
         color: white;
+        @include mobile {
+          font-size: 14px;
+        }
       }
       hr {
         width: 45px;
@@ -30,6 +39,9 @@
       font-size: 16px;
       font-weight: 700;
       color: #606060;
+      @include mobile {
+        font-size: 12px;
+      }
     }
     div {
       display: flex;
@@ -38,6 +50,9 @@
         color: white;
         font-size: 16px;
         font-weight: 700;
+        @include mobile {
+          font-size: 12px;
+        }
       }
     }
   }

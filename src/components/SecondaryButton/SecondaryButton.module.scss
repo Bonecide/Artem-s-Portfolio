@@ -1,3 +1,4 @@
+@import '../../global.scss';
 .button {
   position: relative;
   border: 2px solid white;
@@ -16,6 +17,11 @@
   box-shadow: 0px 32px 54px 0px #03030323;
   gap: 25px;
   overflow: hidden;
+
+  @include mobile {
+    padding: 14px 17px;
+    gap: 14px;
+  }
 }
 
 .button span {
@@ -25,6 +31,10 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
+
+  @include mobile {
+    gap: 14px;
+  }
 }
 
 .button::after {
@@ -37,6 +47,9 @@
   color: white;
   transform: translateY(60px);
   transition: all 0.3s;
+  @include mobile {
+    top: initial;
+  }
 }
 
 .button:hover {

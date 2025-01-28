@@ -1,13 +1,21 @@
+@import '../../global.scss';
 .container {
   margin-top: 200px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+
+  @include mobile {
+    margin-top: 100px;
+  }
   h2 {
     font-size: 80px;
     color: white;
     font-weight: 700;
     align-self: center;
+    @include mobile {
+      font-size: 26px;
+    }
   }
   .potfolio {
     margin-top: 200px;
@@ -17,9 +25,19 @@
     row-gap: 190px;
     flex-wrap: wrap;
     align-items: flex-end;
+    @include mobile {
+      gap: 60px;
+    }
+    @include mobile {
+      margin-top: 100px;
+    }
     .portfolioCard {
       position: relative;
       width: 43%;
+
+      @include mobile {
+        width: 100%;
+      }
       .text {
         display: flex;
         flex-direction: column;
@@ -29,10 +47,18 @@
           display: flex;
           gap: 30px;
           align-items: center;
+
+          @include mobile {
+            gap: 10px;
+          }
           h3 {
             font-size: 20px;
             font-weight: 700;
             color: white;
+
+            @include mobile {
+              font-size: 14px;
+            }
           }
           hr {
             width: 45px;
@@ -45,18 +71,31 @@
       .skills {
         display: flex;
         gap: 18px;
+        @include mobile {
+          gap: 10px;
+        }
         p {
           font-size: 16px;
           font-weight: 700;
           color: #606060;
+
+          @include mobile {
+            font-size: 12px;
+          }
         }
         div {
           display: flex;
           gap: 18px;
+          @include mobile {
+            gap: 10px;
+          }
           h5 {
             color: white;
             font-size: 16px;
             font-weight: 700;
+            @include mobile {
+              font-size: 12px;
+            }
           }
         }
       }

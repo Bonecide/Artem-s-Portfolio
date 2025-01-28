@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div>
-      {loaderTransition(
+      {/* {loaderTransition(
         (style, item) =>
           item && (
             <animated.div
@@ -46,7 +46,7 @@ function App() {
               <Loader />
             </animated.div>
           )
-      )}
+      )} */}
       <Header />
       <WelcomePage />
       <AboutMe />
