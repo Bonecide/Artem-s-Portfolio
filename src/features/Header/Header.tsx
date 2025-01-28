@@ -5,7 +5,7 @@ import {scrollToSection} from '../../scrollTo/scrollTo'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {IoMdClose} from 'react-icons/io'
 import {BurgerMenu} from '../../components/BurgerMenu/BurgerMenu'
-import {AnimatePresence} from 'framer-motion'
+import {CustomAnimatePresence} from '../../components/CustomAnimatePresence/CustomAnimatePresence'
 
 export const Header = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false)
@@ -49,9 +49,9 @@ export const Header = () => {
         )}
       </div>
 
-      <AnimatePresence>
+      <CustomAnimatePresence>
         {isBurgerOpen && <BurgerMenu setIsOpen={setIsBurgerOpen} />}
-      </AnimatePresence>
+      </CustomAnimatePresence>
     </header>
   )
 }
