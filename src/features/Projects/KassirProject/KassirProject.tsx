@@ -9,11 +9,23 @@ export const KassirProject = () => {
   const SECOND_IMAGE = {
     imageUrl: '/assets/img/kassir-old.png',
   }
+  const delimiterIconStyles = {
+    width: '50px',
+    height: '50px',
+    backgroundSize: 'cover',
+    background: '#FFFFFF78',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    backdropFilter: 'blur(10px)',
+    backgroundImage: "url('/assets/img/arrows.png')",
+    border: '2px solid white',
+  }
 
   return (
     <div className={styles.portfolioCard}>
       <div className={styles.sliderWrapper}>
         <ReactBeforeSliderComponent
+          delimiterIconStyles={delimiterIconStyles}
           firstImage={FIRST_IMAGE}
           secondImage={SECOND_IMAGE}
         />
