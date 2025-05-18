@@ -1,3 +1,4 @@
+import {KassirProject} from './KassirProject/KassirProject'
 import {PhoneProject} from './PhoneProject/PhoneProject'
 import styles from './Projects.module.scss'
 import {SushiProject} from './SushiProject/SushiProject'
@@ -6,7 +7,9 @@ export const Projects = () => {
     <section id="works" className="container">
       <div className={styles.container}>
         <h2>My Projects Highlight</h2>
-
+        <div className={styles.mainProject}>
+          <KassirProject />
+        </div>
         <div className={styles.potfolio}>
           <a
             href="https://www.figma.com/file/WOQFzCd44r50mb6frfyX8H/KudaGo-Design?type=design&node-id=0%3A1&mode=design&t=10W8SX5D892asjSL-1"

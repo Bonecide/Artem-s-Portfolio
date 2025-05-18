@@ -1,0 +1,117 @@
+@import '../../../global.scss';
+
+.portfolioCard {
+  position: relative;
+  width: 100%;
+
+  @include mobile {
+    width: 100%;
+  }
+
+  .sliderWrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 9;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: all 0.5s;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+
+    .textTitle {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+
+        @include mobile {
+          font-size: 14px;
+        }
+      }
+
+      hr {
+        width: 50px;
+        height: 2px;
+        border: none;
+        background: #ff9142;
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    gap: 18px;
+
+    @include mobile {
+      gap: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      color: #606060;
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+
+    div {
+      display: flex;
+      gap: 18px;
+
+      @include mobile {
+        gap: 10px;
+      }
+
+      h5 {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.blind {
+  width: max-content;
+  width: 120%;
+  position: absolute;
+  top: -200px;
+  left: -90px;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.mainImg {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
