@@ -1,7 +1,8 @@
 import styles from './KassirProject.module.scss'
 import ReactBeforeSliderComponent from 'react-before-after-slider-component'
 import 'react-before-after-slider-component/dist/build.css'
-
+import 'react-tooltip/dist/react-tooltip.css'
+import {Tooltip} from 'react-tooltip'
 export const KassirProject = () => {
   const FIRST_IMAGE = {
     imageUrl: '/assets/img/kassir-new.png',
@@ -43,9 +44,18 @@ export const KassirProject = () => {
             <h5>Improved UI</h5>
             <h5>Improved UX</h5>
             <h5>Added dark mode</h5>
+            <div
+              data-tooltip-html="<img src='/assets/img/ticket-preview.png' alt='Ticket preview' width='400'/>"
+              data-tooltip-id="ticket-tooltip"
+              className={styles.ticketTextContainer}
+            >
+              <h5 className={styles.ticketText}>Designed a branded ticket </h5>
+              <img src="/assets/icons/picture.svg" alt="ticket" />
+            </div>
           </div>
         </div>
       </div>
+      <Tooltip id="ticket-tooltip" />
     </div>
   )
 }

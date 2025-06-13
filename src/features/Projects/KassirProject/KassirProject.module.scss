@@ -27,12 +27,23 @@
     }
   }
 
+  .ticketTextContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px !important;
+    img {
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+
   .text {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     gap: 15px;
-
+    position: relative;
+    z-index: 999;
     .textTitle {
       display: flex;
       gap: 30px;
@@ -114,4 +125,9 @@
   width: 100%;
   position: relative;
   z-index: 2;
+}
+
+.ticketText {
+  color: #ff9142 !important;
+  cursor: pointer !important;
 }

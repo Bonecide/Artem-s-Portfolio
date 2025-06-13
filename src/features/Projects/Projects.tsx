@@ -75,6 +75,31 @@ export const Projects = () => {
               </div>
             </div>
           </a>
+          <div className={styles.portfolioCard}>
+            <img
+              className={styles.blind}
+              src="/assets/blinds/green.png"
+              alt=""
+            />
+            <img
+              className={styles.mainImg}
+              src="/assets/img/sxodim-app.png"
+              alt=""
+            />
+            <div className={styles.text}>
+              <div className={styles.textTitle}>
+                <h3>Landing for mobile APP</h3>
+                <hr />
+              </div>
+              <div className={styles.skills}>
+                <p>Work:</p>
+                <div>
+                  <h5>UI Design</h5>
+                  <h5>Copywriting </h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

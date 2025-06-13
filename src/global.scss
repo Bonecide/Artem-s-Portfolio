@@ -59,3 +59,10 @@ a {
   border-radius: 'none';
   background-image: '/assets/img/arrows.png !important';
 }
+
+.react-tooltip {
+  z-index: 999999;
+  div {
+    border-radius: 20px !important;
+  }
+}
