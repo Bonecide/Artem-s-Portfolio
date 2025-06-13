@@ -75,6 +75,7 @@
   .skills {
     display: flex;
     gap: 18px;
+    align-items: center;
 
     @include mobile {
       gap: 10px;
@@ -93,6 +94,7 @@
     div {
       display: flex;
       gap: 18px;
+      flex-wrap: wrap;
 
       @include mobile {
         gap: 10px;
