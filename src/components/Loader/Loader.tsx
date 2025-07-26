@@ -12,7 +12,7 @@ export const Loader = () => {
 
         <div className="role">
           <div className="block"></div>
-          <p>UX/UI designer</p>
+          <h4>UX/UI designer</h4>
         </div>
       </div>
     </div>

@@ -22,6 +22,9 @@ export const KassirProject = () => {
     border: '2px solid white',
   }
 
+  const onCLickImage = () => {
+    window.open('', '_blank')
+  }
   return (
     <div className={styles.portfolioCard}>
       <div className={styles.sliderWrapper}>
@@ -52,6 +55,13 @@ export const KassirProject = () => {
               <h5 className={styles.ticketText}>Designed a branded ticket </h5>
               <img src="/assets/icons/picture.svg" alt="ticket" />
             </div>
+            <a
+              href="https://www.figma.com/design/VDZra0r7uWn0T8EMRGiXKb/kassir.kg-redesign?node-id=0-1&t=D5L31raFOUi0mL1n-1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Figma
+            </a>
           </div>
         </div>
       </div>
