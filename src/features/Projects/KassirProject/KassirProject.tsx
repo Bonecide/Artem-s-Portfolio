@@ -22,9 +22,6 @@ export const KassirProject = () => {
     border: '2px solid white',
   }
 
-  const onCLickImage = () => {
-    window.open('', '_blank')
-  }
   return (
     <div className={styles.portfolioCard}>
       <div className={styles.sliderWrapper}>
