@@ -1,6 +1,5 @@
 import {useEffect, useMemo, useRef, useState} from 'react'
 import styles from './PhoneProject.module.scss'
-import {isIOS, isMacOs} from 'react-device-detect'
 
 export const PhoneProject = () => {
   const allImages = useMemo(
@@ -67,11 +66,7 @@ export const PhoneProject = () => {
         <a
           className={styles.mainImg}
           target="_blank"
-          href={
-            isIOS || isMacOs
-              ? 'https://apps.apple.com/ru/app/kassir-kg/id6478946817?l=en-GB'
-              : 'https://play.google.com/store/apps/details?id=com.kassirKg.clientapp'
-          }
+          href="https://www.figma.com/design/RGeepB4zptRnGFc3zwSvnI/kassir-mobile-app?node-id=0-1&p=f&t=xRKOrfGK8M5mxnMR-0"
           rel="noreferrer"
         >
           <img ref={mainImageRef} src={mainImg} alt="" />
